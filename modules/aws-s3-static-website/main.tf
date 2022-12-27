@@ -22,7 +22,7 @@ resource "aws_s3_bucket_website_configuration" "web" {
 resource "aws_s3_bucket_acl" "web" {
   bucket = aws_s3_bucket.web.id
 
-  acl = "public-read"
+  acl = "private"
 }
 
 resource "aws_s3_bucket_policy" "web" {
